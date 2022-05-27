@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7afee700-d610-4059-890e-395c55539284</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapr.AspNetCore" Version="1.7.0" />
+    <PackageReference Include="Dapr.Client" Version="1.7.0" />
+    <PackageReference Include="FreeSql" Version="3.2.651" />
+    <PackageReference Include="FreeSql.Provider.SqlServer" Version="3.2.651" />
+  </ItemGroup>
+
+</Project>
