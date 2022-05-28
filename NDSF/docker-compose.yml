@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  ndsf.webapi:
+    image: ${DOCKER_REGISTRY-}ndsfwebapi
+    build:
+      context: .
+      dockerfile: NDSF.WebAPI/Dockerfile
+    ports:
+      - "6001:6001"
+
+  ndsf.webapi-dapr:
+    image: "daprio/daprd:latest"
+    command: [ "./daprd", "-app-id", "NDSF", "-app-port", "6002" ]
+    depends_on:
+      - ndsf.webapi
+    network_mode: "service:ndsf.webapi"

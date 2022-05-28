@@ -1,0 +1,16 @@
+E:\My_Projects\NDSF\NDSF\bin\Debug\NDSF.WebAPI.deps.json
+E:\My_Projects\NDSF\NDSF\bin\Debug\NDSF.WebAPI.runtimeconfig.json
+E:\My_Projects\NDSF\NDSF\bin\Debug\appsettings.Development.json
+E:\My_Projects\NDSF\NDSF\bin\Debug\appsettings.json
+E:\My_Projects\NDSF\NDSF\bin\Debug\NDSF.WebAPI.exe
+E:\My_Projects\NDSF\NDSF\bin\Debug\NDSF.WebAPI.dll
+E:\My_Projects\NDSF\NDSF\bin\Debug\Dapr.AspNetCore.dll
+E:\My_Projects\NDSF\NDSF\bin\Debug\Dapr.Client.dll
+E:\My_Projects\NDSF\NDSF\bin\Debug\Google.Protobuf.dll
+E:\My_Projects\NDSF\NDSF\bin\Debug\Grpc.Core.Api.dll
+E:\My_Projects\NDSF\NDSF\bin\Debug\Grpc.Net.Client.dll
+E:\My_Projects\NDSF\NDSF\bin\Debug\Grpc.Net.Common.dll
+E:\My_Projects\NDSF\NDSF\bin\Debug\NDSF.WebAPI.pdb
+E:\My_Projects\NDSF\NDSF\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+E:\My_Projects\NDSF\NDSF\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+E:\My_Projects\NDSF\NDSF\obj\Debug\docker-compose.dcproj.CopyComplete

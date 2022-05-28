@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jot84Z13CAzIPcYE88nQDFNgmuAQm187GRRvntylGsY=",
+  "Source": "NDSF.WebAPI",
+  "BasePath": "_content/NDSF.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

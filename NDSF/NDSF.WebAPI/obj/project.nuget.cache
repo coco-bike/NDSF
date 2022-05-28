@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mfqHxGlC0sQDZMCCpTanOq2P8J3PkhNwrZ80vLsIuUlzYkDSOvbD+/4UrEVw1jq26UjKeDhxRw809dDejy0fDA==",
+  "dgSpecHash": "bWbAuw2X6+r2KkshVMMYNpkA6w6okDUmF1/OroM3wp9UtCcw3oUjivNhrfMSH1ousUq2djYPqW717SqdzkVgmQ==",
   "success": true,
   "projectFilePath": "E:\\My_Projects\\NDSF\\NDSF\\NDSF.WebAPI\\NDSF.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\86138\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.8.0\\microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
     "C:\\Users\\86138\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\86138\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\86138\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512",
     "C:\\Users\\86138\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\86138\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\86138\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
