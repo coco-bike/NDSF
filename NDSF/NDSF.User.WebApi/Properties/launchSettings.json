@@ -4,19 +4,19 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:52342",
+      "applicationUrl": "http://localhost:52263",
       "sslPort": 0
     }
   },
   "profiles": {
-    "NDSF.WebAPI": {
+    "NDSF.User.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:5238",
+      "applicationUrl": "http://localhost:5130",
       "dotnetRunMessages": true
     },
     "IIS Express": {

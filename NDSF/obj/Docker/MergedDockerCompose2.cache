@@ -5,24 +5,7 @@ services:
       dockerfile: NDSF.WebAPI/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_URLS: https://+:443;http://+:80
     image: ndsfwebapi
     ports:
     - target: 80
-    - target: 443
-    volumes:
-    - C:\Users\86138\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
-    - C:\Users\86138\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-  ndsf.webapi-dapr:
-    command:
-    - ./daprd
-    - -app-id
-    - NDSF
-    - -app-port
-    - '80'
-    depends_on:
-      ndsf.webapi:
-        condition: service_started
-    image: daprio/daprd:latest
-    network_mode: service:ndsf.webapi
 version: '3.4'

@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
-namespace NDSF.WebAPI
+namespace NDSF.User.WebApi
 {
+    [Route("api/[controller]")]
     [ApiController]
     public class HelloController : ControllerBase
     {
@@ -10,7 +12,7 @@ namespace NDSF.WebAPI
         {
             await Task.CompletedTask;
 
-            return Ok("Hello Dapr");
+            return Ok("Hello User");
         }
     }
 }

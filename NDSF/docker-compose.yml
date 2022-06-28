@@ -6,12 +6,10 @@ services:
     build:
       context: .
       dockerfile: NDSF.WebAPI/Dockerfile
-    ports:
-      - "6001:6001"
 
   ndsf.webapi-dapr:
     image: "daprio/daprd:latest"
-    command: [ "./daprd", "-app-id", "NDSF", "-app-port", "6002" ]
+    command: [ "./daprd", "-app-id", "NDSF.WebApi", "-app-port", "80" ]
     depends_on:
       - ndsf.webapi
     network_mode: "service:ndsf.webapi"

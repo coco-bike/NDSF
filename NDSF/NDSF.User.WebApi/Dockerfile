@@ -3,20 +3,19 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["NDSF.WebAPI/NDSF.WebAPI.csproj", "NDSF.WebAPI/"]
-RUN dotnet restore "NDSF.WebAPI/NDSF.WebAPI.csproj"
+COPY ["NDSF.User.WebApi/NDSF.User.WebApi.csproj", "NDSF.User.WebApi/"]
+RUN dotnet restore "NDSF.User.WebApi/NDSF.User.WebApi.csproj"
 COPY . .
-WORKDIR "/src/NDSF.WebAPI"
-RUN dotnet build "NDSF.WebAPI.csproj" -c Release -o /app/build
+WORKDIR "/src/NDSF.User.WebApi"
+RUN dotnet build "NDSF.User.WebApi.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "NDSF.WebAPI.csproj" -c Release -o /app/publish
+RUN dotnet publish "NDSF.User.WebApi.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "NDSF.WebAPI.dll"]
+ENTRYPOINT ["dotnet", "NDSF.User.WebApi.dll"]

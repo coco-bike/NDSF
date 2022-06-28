@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>612c26eb-41d2-48df-85a9-c4f0fed32d87</ProjectGuid>
+    <ProjectGuid>995df79b-04a7-419e-851b-920c0c534456</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/weatherforecast</DockerServiceUrl>
     <DockerServiceName>ndsf.webapi</DockerServiceName>

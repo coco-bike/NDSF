@@ -3,47 +3,20 @@ services:
     build:
       context: E:\My_Projects\NDSF\NDSF
       dockerfile: NDSF.WebAPI/Dockerfile
-      labels:
-        com.microsoft.created-by: visual-studio
-        com.microsoft.visual-studio.project-name: NDSF.WebAPI
-      target: base
-    container_name: NDSF.WebAPI
-    entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
-      ASPNETCORE_URLS: https://+:443;http://+:80
-      DOTNET_USE_POLLING_FILE_WATCHER: '1'
-      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
-    image: ndsfwebapi:dev
-    labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
-        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/NDSF.WebAPI.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
-        dotnet); then kill $$PID; fi"
-      com.microsoft.visualstudio.debuggee.program: dotnet
-      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    image: ndsfwebapi
     ports:
     - target: 80
-    - target: 443
-    - published: 6001
-      target: 6001
-    tty: true
-    volumes:
-    - E:\My_Projects\NDSF\NDSF\NDSF.WebAPI:/app:rw
-    - C:\Users\86138\vsdbg\vs2017u5:/remote_debugger:rw
-    - C:\Users\86138\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
-    - C:\Users\86138\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-    - D:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
-    - C:\Users\86138\.nuget\packages:/root/.nuget/packages:ro
-    - E:\My_Projects\NDSF\NDSF:/src:rw
+    - published: 6101
+      target: 6100
   ndsf.webapi-dapr:
     command:
     - ./daprd
     - -app-id
-    - NDSF
+    - NDSF.WebApi
     - -app-port
-    - '6002'
+    - '80'
     depends_on:
       ndsf.webapi:
         condition: service_started
